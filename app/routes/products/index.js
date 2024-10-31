@@ -1,9 +1,13 @@
 import express from 'express';
 import createProduct from './createProduct/index.js';
 
-const productRoutes = express.Router();
+const productRoutes = (shopify) =>{
+    const router = express.Router();
 
-productRoutes.post('/create-product', createProduct);
+    router.post('/create-product', (req, res) => createProduct(req, res, shopify));
+    
 
+    return router;
+}
 
 export default productRoutes;

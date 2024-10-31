@@ -3,7 +3,7 @@
 client_id = "dda3c98d02313f8a86648cd0a866a7e9"
 name = "Omnis-backend-dev-test1"
 handle = "omnis-backend-dev-test1"
-application_url = "https://thongs-department-january-mandatory.trycloudflare.com"
+application_url = "https://brochure-path-malpractice-russian.trycloudflare.com"
 embedded = true
 
 [build]
@@ -16,9 +16,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://thongs-department-january-mandatory.trycloudflare.com/auth/callback",
-  "https://thongs-department-january-mandatory.trycloudflare.com/auth/shopify/callback",
-  "https://thongs-department-january-mandatory.trycloudflare.com/api/auth/callback"
+  "https://brochure-path-malpractice-russian.trycloudflare.com/auth/callback",
+  "https://brochure-path-malpractice-russian.trycloudflare.com/auth/shopify/callback",
+  "https://brochure-path-malpractice-russian.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
