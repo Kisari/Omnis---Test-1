@@ -1,3 +1,5 @@
+## Important: Require the .env file before running
+
 # How to run the project
 
 Install dependencies:
