@@ -13,3 +13,5 @@ Run the project
 ```shell
 npm run dev
 ```
+
+## Go to http://localhost/ for sending the request
