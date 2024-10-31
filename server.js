@@ -1,7 +1,8 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import session from 'express-session';
-import { Shopify } from '@shopify/shopify-api';
+import '@shopify/shopify-api/adapters/node';
+import {shopifyApi, LATEST_API_VERSION} from '@shopify/shopify-api';
 import productRoutes from './app/routes/products/index.js';
 
 dotenv.config();
@@ -17,12 +18,12 @@ app.use(session({
 }));
   
 
-Shopify.Context.initialize({
+const shopify = shopifyApi({
     API_KEY: process.env.SHOPIFY_API_KEY,
     API_SECRET_KEY: process.env.SHOPIFY_API_SECRET,
     SCOPES: process.env.SCOPES.split(','),
     HOST_NAME: process.env.HOST.replace(/https?:\/\//, ''), // thiếu host
-    API_VERSION: '2024-10',
+    API_VERSION: LATEST_API_VERSION,
     IS_EMBEDDED_APP: true,
   });
 

@@ -1,9 +1,9 @@
 import express from 'express';
-import createProduct from './createProduct';
+import createProduct from './createProduct/index.js';
 
-const router = express.Router();
+const productRoutes = express.Router();
 
-router.post('/create-product', createProduct);
+productRoutes.post('/create-product', createProduct);
 
 
-export default router;
+export default productRoutes;
